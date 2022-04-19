@@ -1,4 +1,6 @@
 # 图像处理
+1. 图像识别
+1. 图像可视化
 
 ## 坐标系
 * [坐标系](https://www.cnblogs.com/biaohuang/p/14419118.html), [坐标系](https://blog.csdn.net/weicao1990/article/details/82688446)
@@ -56,3 +58,4 @@
 * [ITK与VTK数据转换](https://blog.csdn.net/menjiawan/article/details/47283809)
 * https://www.incool3d.com/
 * https://www.weiyunyingxiang.com/
+* [可视化重建](https://www.iih.xin/productinfo/1410267.html)
