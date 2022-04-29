@@ -22,3 +22,6 @@
 ## 疾病
 ### 脑卒中
 * [CTA还是CTP](http://med.china.com.cn/content/pid/286902/tid/1026)
+
+## 治疗
+* [介入治疗](https://zhuanlan.zhihu.com/p/38073368)
