@@ -14,13 +14,3 @@
 | ---- | ---- | ---- |
 | [3D slicer](https://www.slicer.org/) | 神外放疗和影像 | [使用方法](https://blog.csdn.net/wacebb/article/details/105931860) <br> 海量插件，支持原生执行Python脚本，支持MATLAB功能 <br> 支持所有常规影像的处理，支持DTI，ROI勾画、NIFIT文件处理、3D打印相关 |
 | [ITK-SNAP](http://www.itksnap.org) | 基于ITK | ROI，勾画用途 |
-
-
-```mermaid
-graph TD
-  A[Hard edge] -->|Link text| B(Round edge)
-  B --> C{Decision}
-  C -->|One| D[Result one]
-  C -->|Two| E[Result two]
-  click E "https://www.github.com"
-```

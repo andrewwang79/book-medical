@@ -1,5 +1,5 @@
 * [介绍](README.md)
-* 医疗知识
+* [医疗知识](kb/SUMMARY.md)
     * [放射科](kb/radiology.md)
     * [DICOM协议](kb/dicom.md)
     * [NIFTI协议](kb/nifti.md)
