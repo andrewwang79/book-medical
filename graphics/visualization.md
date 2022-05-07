@@ -2,6 +2,7 @@
 ## 三维重建
 * [CT三维重建](https://blog.csdn.net/fanhenghui/article/details/51036422)
 * [可视化重建](https://www.iih.xin/productinfo/1410267.html)
+* [医学序列图像定位线绘制基本方法介绍](https://blog.csdn.net/inter_peng/article/details/62046916)
 
 ## 渲染方案
 ### 方案比对
@@ -33,7 +34,7 @@
 
 ### 图像驱动
 | 项 | 说明 | 资料 |
-| :----: | ---- | ---- |
+| :-: | - | - |
 | OpenGL | 图形界的工业标准，其仅仅定义了一组2D和3D图形接口API，无实现 | http://www.opengl-tutorial.org/cn/ |
 | GLSL | OpenGL Shading Language，可以理解成GPU指令的C语言 | * [OpenGL着色语言GLSL中文手册](https://blog.csdn.net/hk_shao/article/details/82084274) |
 | Mesa3D | OpenGL API的一种开源实现的图形库。显卡不支持OpenGL2.0也可使用 |  |
@@ -42,7 +43,7 @@
 | DRI | Direct Rendering Infrastructure |  |
 
 | 操作系统 | 窗口系统 | OpenGL实现 |
-| :----: | ---- | ---- |
+| :-: | - | - |
 | Apple OS | AGL | Cocoa/NSGL |
 | Linux | GLX | Mesa/GLX |
 | Windows | WGL | WGL |
@@ -55,6 +56,24 @@
   * libgl1-mesa-dev：OpenGL实现库
   * libglu1-mesa-dev：gl Utilities库
   * libosmesa6-dev：off screen库
+
+## 可视化功能
+| 分类 | 功能 | MPR | VR | VE | MIP | CPR |
+| :-: | - | - | - | - | - | - |
+| 显示 | 重建渲染 | Dicom | Dicom+mask | / | / | / |
+|  | 导出 | / | Dicom+mask | / | / | / |
+|  | 设置视图显示尺寸/最大化 | Y | Y | / | / | / |
+|  | 设置：窗宽窗位/配色方案/其他属性 | Y | Y | / | / | / |
+|  | 显示隐藏四角信息/十字线(MPR) | Y | N | / | / | / |
+|  | 坐标改变通知(MPR) | Y | N | / | / | / |
+|  | 显示隐藏mask(VR) | N | Y | / | / | / |
+|  | 显示视图(VR) | N | 鹰眼 | / | / | / |
+| 操作 | 平移和缩放 | Y | Y | / | / | / |
+|  | 旋转 | N | Y | / | / | / |
+| 编辑 | 轮廓(点/线/圆/方)，文字，画笔画刷 | Y | Y | / | / | / |
+|  | 高级：Level tracing，Grow from seeds，Fill between slices | Y | N | / | / | / |
+|  | 裁剪 | N | Y | / | / | / |
+|  | 中心线编辑 | N | Y | / | / | / |
 
 ## 资料
 ### 公司

@@ -13,7 +13,7 @@
 
 ## 常用字段
 | 类型 | 名称 | 说明 |
-| :----: | ---- | ---- |
+| :-: | - | - |
 | 最小图像像素值 | SmallestImagePixelValue(0028,0106) | 射线衰减值 |
 | 最大图像像素值 | LargestImagePixelValue(0028,0107) | 射线衰减值 |
 | 窗位 | WindowCenter(0028,1050) | 密度值，单位是HU |
@@ -21,10 +21,27 @@
 | 缩放截距 | RescaleIntercept(0028,1052) |  |
 | 缩放率 | RescaleSlope(0028,1053) |  |
 
-## 传输协议
+## 通讯协议
+* [DICOM通信介绍.pptx](https://medical.wangyaqi.cn/s//radiology/DICOM通信介绍.pptx)
 * [Transfer Syntax](https://blog.csdn.net/u014738683/article/details/54573611)
 * [SOP](https://blog.csdn.net/u014738683/article/details/54573728)
 * [DICOM：C-GET与C-MOVE对比剖析](https://blog.csdn.net/zssureqh/article/details/46868695)
+
+### 术语
+| 名称 | 中文 | 说明 |
+| :-: | - | - |
+| SOP（Service-Object Pair）| 对象对 | Service(DICOM服务，如存储服务) + Object(DICOM对象，如CT影像) |
+| SCP（Service Class Provider）| 服务类提供者 | 服务端 |
+| SCU（Service Class User）| 服务类使用者 | 客户端，设备 |
+| SOP Class（Service Object Pair Class Unique Identifier）| 对象对类 | 等同Abstract Syntax |
+| AE（Application Entity）| 应用实体 | SCP和SCU的实体就是AE。2个AE传输前需确定好：SOP，SCP，SCU，SOP Class |
+
+### 服务命令
+| 服务 | 命令 | 说明 |
+| :-: | - | - |
+| 存储服务 | C-STORE | SCU传输DICOM图像到SCP， 也就是PUSH推图模式 |
+| Query/Retrieve服务 | C-FIND | SCU向SCP请求某个级别(Patient/Study/Series/Image)的信息 |
+| Query/Retrieve服务 | C-MOVE | ![C-MOVE](../s/radiology/c-move.png) |
 
 ## 公式
 1. 密度值 = (像素值 * RescaleSlope) + RescaleIntercept
