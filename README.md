@@ -15,7 +15,7 @@
 | EMR | 电子病历 | 患者门诊、住院期间产生的所有与该患者诊疗活动相关的记录信息 |
 | EHR | 电子健康档案 | 个人健康、保健和治疗的记录 |
 
-### 协议标准
+## 协议标准
 | 英文 | 中文 | 说明 |
 | :-: | - | - |
 | CAD | 临床文档架构 | 跨机构、跨系统的医疗文书信息交换的“文档结构”，不涉及交换文档的内容信息标准 |
@@ -23,10 +23,18 @@
 | [HL7](https://baike.baidu.com/item/%E5%8C%BB%E7%96%97%E4%BF%A1%E6%81%AF%E4%BA%A4%E6%8D%A2%E6%A0%87%E5%87%86HL7/7472088) | 医疗信息交换标准HL7(Health Level 7) | HIS、RIS、LIS等相互通信数据标准 |
 | [IHE](https://baike.baidu.com/item/IHE-C/5168190) | 集成医疗企业(Integration Healthcare Enterprise) | 不是标准，而是一个服务于医疗信息系统的技术框架 |
 
-### 机构
+## 机构
 | 英文 | 中文 | 说明 |
 | :-: | - | - |
 | CFDA | 国家食品药品监督管理总局(China Food and Drug Administration) | [国产医疗器械产品（注册）查询](https://www.nmpa.gov.cn/datasearch/home-index.html#category=ylqx) |
+
+## 医技科室
+| 名称 | 说明 |
+| :-: | - |
+| 放射科 |  |
+| 超声科 |  |
+| 病理科 | 看人身上的肉。细胞病理、组织病理、免疫组化、分子病理 |
+| 检验科 | 看人身体里的水 |
 
 ## 疾病
 ### 脑卒中
