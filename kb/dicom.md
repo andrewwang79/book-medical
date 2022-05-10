@@ -21,6 +21,11 @@
 | 缩放截距 | RescaleIntercept(0028,1052) |  |
 | 缩放率 | RescaleSlope(0028,1053) |  |
 
+## 字段值的中文乱码
+* DICOM文件本身包括Tag (0008, 0005) Specific Character Set记录编码集，如果没有SpecificCharacterSet时, 以ASCII来处理所有字段。
+* 乱码情况：字段中文用GB18030,GBK,UTF8等中文编码，但是SpecificCharacterSet(无字段 || 有字段但值为空 || 有字段但值为ASCII)
+* 编码解析优先级：数据库记录的设备(StationName(0008,1010))对应编码，数据库记录的医院对应编码，SpecificCharacterSet
+
 ## 通讯协议
 * [DICOM通信介绍.pptx](https://medical.wangyaqi.cn/s//radiology/DICOM通信介绍.pptx)
 * [Transfer Syntax](https://blog.csdn.net/u014738683/article/details/54573611)

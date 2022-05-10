@@ -8,6 +8,7 @@
   * [坐标系](graphics/coordinate.md)
   * [图像识别](graphics/recog.md)
   * [图像可视化](graphics/visualization.md)
+  * [图像可视化功能](graphics/visual-fn.md)
   * [ITK](graphics/itk.md)
   * [VTK](graphics/vtk.md)
 * [手术](operation/SUMMARY.md)
