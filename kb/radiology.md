@@ -36,7 +36,7 @@
 | mha/mhd |  | 体数据，mhd包含图像的meta data（信息头）和图像裸数据 |
 | NIFTI | Neuroimaging Informatics Technology Initiative | 体数据，nii/nii.gz |
 | nrrd |  | Slicer |
-| stl |  | 基于dcm等图像，三维重建模型 |
+| stl |  | 基于dcm等图像，三维重建模型。表面的MESH |
 | JPG/PNG/tiff |  | 图片 |
 
 ## 资料
