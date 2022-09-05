@@ -11,8 +11,10 @@
 | 图像坐标系 | 单位是点(因为间距不定，点的mm也不定)，原点在左上角。i坐标轴向右递增，j坐标轴向下递增，k坐标轴向后递增。 |
 
 ## 人体坐标系和图像坐标系
+* 矢状面
+* 冠状面
+* 轴位面/横断面（The axial plane）:脚部(Inferior), 头部(Superior)
 ![人体坐标系](../s/PatientCoordinateSystem.png)
-* 轴状位/横断面（The axial plane）:脚部(Inferior), 头部(Superior)
 * 图像坐标系转换到人体坐标系：通过图像的原点和间距，计算其在人体坐标系中的对应位置
 
 ## Dicom坐标tag
