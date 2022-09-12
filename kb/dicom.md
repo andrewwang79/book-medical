@@ -9,7 +9,9 @@
 * [字段定义](http://dicom.nema.org/dicom/2013/output/chtml/part06/chapter_6.html)
 * [人体常见组织CT值](https://www.jianshu.com/p/3778324574d4)
 * [GE](http://www3.gehealthcare.co.uk/~/media/documents/us-global/products/interoperability/dicom/radiology-pacs-ris/gehc-dicom-conformance_pathspeedpacs-v8-1_iisfp10282_rev2.pdf)，[GE Private TS](https://blog.csdn.net/zssureqh/article/details/47222685)
-* 窗宽窗位: 是对于X线衰减系数的筛选，即常说的密度值。如窗宽值为300，窗位为-100，那么窗宽窗位的范围是-250到50，计算公式：[窗位-窗宽/2，窗位+窗宽/2]，那么CT值小于（窗位-窗宽/2）的时候就变成（窗位-窗宽/2），如果CT值大于（窗位+窗宽/2）的时候就变成（窗位+窗宽/2）。
+* 窗宽窗位: 窗宽（Window Width,简写WW）、窗位（Window Level,简写WL）。是对于密度值的筛选。
+  * 范围的计算公式 = [窗位-窗宽/2，窗位+窗宽/2]。如窗宽值为300，窗位为-100，那么窗宽窗位的范围是-250到50。
+  * 密度值小于最小值时就变成最小值，密度值大于最大值时就变成最大值。
 
 ## 常用字段
 | 类型 | 名称 | 说明 |
@@ -51,7 +53,6 @@
 ## 公式
 1. 密度值 = (像素值 * RescaleSlope) + RescaleIntercept
 1. RGB = 像素值 * (LargestImagePixelValue - SmallestImagePixelValue) / 255
-1. 密度值窗位选择: zoneMin < [WindowCenter-WindowWidth/2, WindowCenter+WindowWidth/2] < zoneMax。zoneMin的密度值是最小窗，zoneMax的密度值是最大窗
 
 ## 脱敏
 * 行业脱敏TAG参考：https://www.dicomlibrary.com/terms-of-service/，https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4636522/
