@@ -12,6 +12,3 @@
 * https://itk.org/ItkSoftwareGuide.pdf
 * [build](https://itk.org/Wiki/ITK/Getting_Started/Build/Linux)
 * [hello world](https://itk.org/Wiki/ITK/HelloInsight)
-
-## 知识
-* [Mesh网格知识](http://www.jmecn.net/tutorial-for-beginners/chapter-4-mesh.html)

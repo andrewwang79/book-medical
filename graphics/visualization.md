@@ -5,6 +5,8 @@
 * [医学序列图像定位线绘制基本方法介绍](https://blog.csdn.net/inter_peng/article/details/62046916)
 * 正切：沿着轴向的切割，步长和spacing相同，轴状位显示和原始dicom单层显示相同，pixel取值没有经过插值
 * 斜切：通常说的任意切，斜切面上像素点是通过插值得到的，一般原始ct图像时通过线性插值，mask图像是通过最近邻插值，还有些其它的插值方法，比如双线性插值，样条插值
+* [面绘制和体绘制](https://blog.csdn.net/weixin_42352178/article/details/109201572)
+* [Mesh网格知识](http://www.jmecn.net/tutorial-for-beginners/chapter-4-mesh.html)
 
 ## 渲染知识
 ### 渲染方式
