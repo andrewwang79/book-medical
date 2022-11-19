@@ -13,6 +13,7 @@
   * [ITK](graphics/itk.md)
   * [VTK](graphics/vtk.md)
 * [手术](operation/SUMMARY.md)
-  * [术前计划系统](operation/plan.md)
+  * [术前规划系统](operation/plan.md)
   * [术中导航系统](operation/nav.md)
   * [手术机器人](operation/robot.md)
+* [人体知识](body/SUMMARY.md)
