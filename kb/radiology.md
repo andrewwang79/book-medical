@@ -25,7 +25,7 @@
 | CTA(CT血管成像/CT Angiography) | 增强CT。将动脉血管显影的药物注射到静脉内，利用CT机扫描获得的图像数据进行处理后，使头颈、心脏、肺动脉、主动脉等血管显影成像 |  |
 | CTP(CT灌注成像/CT Perfusion) | 增强CT。[原理](https://blog.csdn.net/chenran187906/article/details/110387736) |  |
 | 数字减影技术(DSA/Digital subtraction angiography) | 将注入造影剂前后拍摄的两帧X线图像通过数字化处理(减影、增强和再成像)，把不需要的组织影像删除掉，只保留血管影像 |  |
-| 锥形束CT(CBCT/Cone Beam CT) | 西门子的成像视野是16立方厘米 |  |
+| [锥形束CT(CBCT/Cone Beam CT)](https://www.cn-healthcare.com/articlewm/20220531/content-1367848.html) | 西门子的成像视野是16立方厘米 |  |
 | [C形臂(C型的机架)](https://zhuanlan.zhihu.com/p/265023777) | 大C(DSA，固定的)、中C(大C80%以上手术需求)和小C(骨科C臂) |  |
 | 经胸壁超声心动图(TTE/transthoracic echocardiography) |  |  |
 | [经食道超声心动图(TEE/transesophageal echocardiography)](https://e.dxy.cn/wisdom/front/zhihuihao/6961) | 通过超声探头位置的改变，由后向前近距离扫查心脏深部结构，显示出三维心脏结构的可视图像。TEE能比TTE更好地显示心脏后部结构 |  |
