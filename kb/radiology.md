@@ -40,7 +40,7 @@
 
 ## 影像文件
 * 放射中主要有六种文件格式：DICOM（医疗中的数字图像和通信）、NIFTI（神经影像学信息技术计划）、PAR/REC（飞利浦 MRI 扫描格式）、ANALYZE（Mayo医疗成像）、NRRD（近乎原始光栅数据）、MNIC 格式。
-* 3D模型(mesh)主要是STL和OBJ
+* [3D模型(mesh)](https://blog.csdn.net/cloudqiu/article/details/98595029)主要是STL和OBJ
 
 | 类型 | 全称 | 说明 |
 | :-: | - | - |

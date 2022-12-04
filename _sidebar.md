@@ -12,6 +12,7 @@
   * [图像可视化功能](graphics/visual-fn.md)
   * [ITK](graphics/itk.md)
   * [VTK](graphics/vtk.md)
+  * [OpenGL](graphics/opengl.md)
 * [手术](operation/SUMMARY.md)
   * [术前规划系统](operation/plan.md)
   * [术中导航系统](operation/nav.md)

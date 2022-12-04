@@ -2,11 +2,34 @@
 ## 三维重建知识
 * [CT三维重建](https://blog.csdn.net/fanhenghui/article/details/51036422)
 * [可视化重建](https://www.iih.xin/productinfo/1410267.html)
+
+| 字段 | 说明 |
+| - | - |
+| 多平面重建(MPR/Multiplanar Reconstruction) | 适用于任一平面的结构成像，以任意角度观察正常组织器官或病变，可以显示腔性结构的横截面以观察腔隙的狭窄程度、评价血管受侵情况、真实地反映器官问的位置关系等 |
+| 曲面重建(CPR/Curved Plannar Reconstruction) | 在一个维度上选择特定的曲线路径，将该路径上的所有体素在同一平面上进行显示，可以一次评价曲度较大的结构如脾动脉、胰管、冠状动脉等管状结构的全长情况。但CPR所显示的不是正常的解剖结构和关系（它是把管状结构拉直了看），同时需要多个角度曲面重建以完整评价病变。 |
+| 容积重建(VRT) | 形态及色彩逼真，绝对是CT三维重建中的“高富帅”，可以对动静脉血管、软组织及骨结构等进行立体塑形成像，也可以显示支气管树、结肠及内耳等结构，对于复杂结构的成像有一定优势 |
+| 仿真内窥镜(VE） | 可以模拟各种内镜检查的效果，它是假设视线位于所要观察的管“腔”内，通过设定一系列的参数范围，即可看到管“腔”内的结构 |
+| 表面阴影成像(SSD) | 将操作者的眼睛作为假设光源方向，投射到CT值在设定阈值以上的体素上则不再透过继续成像，仅呈现所有表面体素的集合立体图形，适用手显示CT值与其他结构相差较大的组织结构成像（就像是黑白的塑形图像），所以临床上主要用于显示骨骼病变或是结肠CT重建 |
+| 最大密度投影(MP) | 将一定厚度（即CT层厚）中最大CT值的体素投影到背景平面上，以显示所有或部分的强化密度高的血管/器官，所以变化层厚会对图像产生影响 |
+| 最小密度投影 (min/p) | 和MIP正好相反，反映的是一定层厚图像中CT值最低的体素，所以常用来显示胆道、气道等组织结构 |
+
+* [面绘制和体绘制](https://blog.csdn.net/weixin_42352178/article/details/109201572)
 * [医学序列图像定位线绘制基本方法介绍](https://blog.csdn.net/inter_peng/article/details/62046916)
 * 正切：沿着轴向的切割，步长和spacing相同，轴状位显示和原始dicom单层显示相同，pixel取值没有经过插值
 * 斜切：通常说的任意切，斜切面上像素点是通过插值得到的，一般原始ct图像时通过线性插值，mask图像是通过最近邻插值，还有些其它的插值方法，比如双线性插值，样条插值
-* [面绘制和体绘制](https://blog.csdn.net/weixin_42352178/article/details/109201572)
-* [Mesh网格知识](http://www.jmecn.net/tutorial-for-beginners/chapter-4-mesh.html), [点云到Mesh](https://blog.csdn.net/Architet_Yang/article/details/90049715)
+
+### 曲面重建(CPR)
+* [血管的三维重建](https://blog.csdn.net/wei_cheng18/article/details/77919115)
+* [VTK实现曲面重建](https://beondxin.blog.csdn.net/article/details/117248736)
+* [VTK曲面重建技术](https://blog.csdn.net/Ericohe/article/details/116189837)
+
+### Mesh
+* [Mesh网格知识](http://www.jmecn.net/tutorial-for-beginners/chapter-4-mesh.html)
+* [点云到Mesh](https://blog.csdn.net/Architet_Yang/article/details/90049715)
+
+### 配准
+* [3DSlicer多模态图像配准教程](http://www.360doc.com/content/22/0311/11/66272086_1021038063.shtml)
+* [3DSlicer下图像的配准与融合（一）单模态图像的配准和融合](http://www.medtion.com/info/18758.jspx)
 
 ## 渲染知识
 ### 渲染方式
@@ -18,7 +41,7 @@
 | 项 | 说明 | 资料 |
 | :-: | - | - |
 | OpenGL | 图形界的工业标准，其仅仅定义了一组2D和3D图形接口API，无实现 | http://www.opengl-tutorial.org/cn/ |
-| GLSL | OpenGL Shading Language，可以理解成GPU指令的C语言 | * [OpenGL着色语言GLSL中文手册](https://blog.csdn.net/hk_shao/article/details/82084274) |
+| GLSL | OpenGL Shading Language，可以理解成GPU指令的C语言 | [OpenGL着色语言GLSL中文手册](https://blog.csdn.net/hk_shao/article/details/82084274) |
 | Mesa3D | OpenGL API的一种开源实现的图形库。显卡不支持OpenGL2.0也可使用 |  |
 | GLFW | GL framework，主要是视窗界面支持(窗口、键盘等)。类似的有GLUT |  |
 | GLUT | gl utility toolkit。freeglut3-dev |  |

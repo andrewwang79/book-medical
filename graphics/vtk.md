@@ -9,11 +9,14 @@
 
 ## VTK集成EGL编译
 ```
-
 git clone https://gitlab.kitware.com/vtk/vtk.git && cd vtk && git checkout v8.2.0
-mkdir /app/vtk_install && mkdir build
-cd build
+mkdir /app/vtk_install && mkdir build && cd build
 // 重点是-DVTK_USE_X=OFF -DVTK_OPENGL_HAS_EGL=ON -DVTK_OPENGL_HAS_OSMESA=OFF
 cmake -DCMAKE_INSTALL_PREFIX=/app/vtk_install -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -DBUILD_EXAMPLES=OFF -DBUILD_TESTING=OFF -DVTK_Group_Views=ON -DModule_vtkRenderingParallel=ON -DVTK_Group_Rendering=ON -DVTK_Group_StandAlone=ON -DVTK_USE_X=OFF -DVTK_OPENGL_HAS_EGL=ON -DVTK_OPENGL_HAS_OSMESA=OFF -DVTK_RENDERING_BACKEND=OpenGL2 -DVTK_DEFAULT_RENDER_WINDOW_OFFSCREEN=ON
 make -j8 && make install
 ```
+
+## 库设计资料
+* [基本数据结构](https://blog.csdn.net/deepsprings/article/details/107942471)
+* [基本数据结构之数据对象和数据集](https://blog.csdn.net/webzhuce/article/details/72615468)
+* [数据对象、管道架构、渲染子系统](https://blog.csdn.net/charce_you/article/details/93486241)
