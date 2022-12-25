@@ -43,7 +43,7 @@
 * [3D模型(mesh)](https://blog.csdn.net/cloudqiu/article/details/98595029)主要是STL和OBJ
 
 | 类型 | 全称 | 说明 |
-| :-: | - | - |
+| - | - | - |
 | dicom | Digital Imaging and Communication In Medicine | Orthanc - DICOM Server |
 | mha/mhd |  | 体数据，mhd包含图像的meta data（信息头）和图像裸数据 |
 | NIFTI | Neuroimaging Informatics Technology Initiative | 体数据，nii/nii.gz |

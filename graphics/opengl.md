@@ -4,9 +4,15 @@
 * [OpenGL入门教程](https://blog.csdn.net/xiangzhihong8/article/details/84776943)
 
 ## 配套库
-* OpenGL ES(OpenGL for Embedded Systems)三维图形API的子集，针对手机、PDA和游戏主机等嵌入式设备而设计
-* WebGL（全写Web Graphics Library）是一种3D绘图协议，通过增加OpenGL ES的一个JavaScript绑定，WebGL可以为HTML5 Canvas提供硬件3D加速渲染
-* 窗口库GLFW
+* https://blog.csdn.net/qq_42741249/article/details/125737731
+
+| 项 | 说明 | 资料 |
+| - | - | - |
+| GLEW(OpenGL Extension Wrangler Library) | 类似glad。对底层OpenGL接口的封装，可以让调用代码跨平台 |  |
+| GLFW(GL framework) | FreeGLUT升级版。窗口库，主要是视窗界面支持(窗口、键盘等)。 |  |
+| GLUT/FreeGLUT | gl utility toolkit。freeglut3-dev |  |
+| OpenGL ES(OpenGL for Embedded Systems) | 三维图形API的子集，针对手机、PDA和游戏主机等嵌入式设备而设计 |  |
+| WebGL(Web Graphics Library) | 3D绘图协议，通过增加OpenGL ES的一个JavaScript绑定，WebGL可以为HTML5 Canvas提供硬件3D加速渲染 |  |
 
 ## 坐标空间
 1. 局部空间(Local Space，或者称为物体空间(Object Space))

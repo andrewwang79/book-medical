@@ -39,12 +39,10 @@
 
 ### 图像驱动
 | 项 | 说明 | 资料 |
-| :-: | - | - |
+| - | - | - |
 | OpenGL | 图形界的工业标准，其仅仅定义了一组2D和3D图形接口API，无实现 | http://www.opengl-tutorial.org/cn/ |
 | GLSL | OpenGL Shading Language，可以理解成GPU指令的C语言 | [OpenGL着色语言GLSL中文手册](https://blog.csdn.net/hk_shao/article/details/82084274) |
 | Mesa3D | OpenGL API的一种开源实现的图形库。显卡不支持OpenGL2.0也可使用 |  |
-| GLFW | GL framework，主要是视窗界面支持(窗口、键盘等)。类似的有GLUT |  |
-| GLUT | gl utility toolkit。freeglut3-dev |  |
 | DRI | Direct Rendering Infrastructure |  |
 
 | 操作系统 | 窗口系统 | OpenGL实现 |
@@ -65,7 +63,7 @@
 ## 渲染方案
 ### 方案比对
 | 项 | 技术 | 优势 | 劣势 |
-| :-: | - | - | - |
+| - | - | - | - |
 | 后端渲染 | 无头渲染(Headless): (VTK+EGL)+websocket | 支持复杂操作，终端开发容易，**一套环境维护成本低** | **依赖网络带宽**，需要后端大量的内存和算力 |
 | 前端-浏览器渲染 | Onscreen渲染: H5+js库 | 终端不同可复用 | **依赖终端的内存和算力**；复杂操作的支持度有限制 |
 | 前端-客户端渲染 | Onscreen渲染: QT+VTK | 支持复杂操作 | **依赖终端的内存和算力**；**需做系统和环境兼容**；终端不同需重做，比如手机端要换QT |
@@ -78,7 +76,7 @@
 * Linux的4种渲染方式
 
 | 项 | 速度 | 使用GPU | 说明 |
-| :-: | - | - | - |
+| - | - | - | - |
 | CPU渲染 | 慢 | N |  |
 | xvfb虚拟xServer | 慢 | Y | 从GPU到CPU拷贝图像速度非常慢 |
 | VTK OSMESA(CPU软件驱动) | 慢 | Y |  |
