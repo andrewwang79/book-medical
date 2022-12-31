@@ -27,10 +27,6 @@
 * [Mesh网格知识](http://www.jmecn.net/tutorial-for-beginners/chapter-4-mesh.html)
 * [点云到Mesh](https://blog.csdn.net/Architet_Yang/article/details/90049715)
 
-### 配准
-* [3DSlicer多模态图像配准教程](http://www.360doc.com/content/22/0311/11/66272086_1021038063.shtml)
-* [3DSlicer下图像的配准与融合（一）单模态图像的配准和融合](http://www.medtion.com/info/18758.jspx)
-
 ## 渲染知识
 ### 渲染方式
 * Onscreen: Onscreen refers to the case where the rendering results are presented to the users in a viewable window. On Linux, this invariably requires a running and accessible X server. The desktop Qt client can only operate in on-screen mode and hence needs an accessible X server.
