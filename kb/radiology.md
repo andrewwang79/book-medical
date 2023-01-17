@@ -45,7 +45,7 @@
 | 类型 | 全称 | 说明 |
 | - | - | - |
 | dicom | Digital Imaging and Communication In Medicine | Orthanc - DICOM Server |
-| mha/mhd |  | 体数据，mhd包含图像的meta data（信息头）和图像裸数据 |
+| mha/mhd |  | 体数据，mhd包含图像的meta data（.mhd）和图像裸数据(.raw) |
 | NIFTI | Neuroimaging Informatics Technology Initiative | 体数据，nii/nii.gz |
 | [NRRD](http://teem.sourceforge.net/nrrd/format.html) | Nearly Raw Raster Data | “扩散加权图像”和“扩散张量图像”数据可以被解读为一个“3D切片机”，能够直观地确定张量图像的方向与神经解剖的预期是一致的。 |
 | STL | stereolithography，光固化立体造型术 | 三维重建模型的表面MESH，用三角形网格来表现3D CAD模型，只能描述三维物体的几何信息，不支持颜色材质等信息 |

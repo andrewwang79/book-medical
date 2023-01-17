@@ -1,8 +1,10 @@
 # VTK
-
-* [VTK基础及应用开发教程](https://blog.csdn.net/www_doling_net/article/details/8763686)
-* []()
+## 知识
+* [教程1](https://blog.csdn.net/weixin_41755306/category_11615855.html), [教程1](https://blog.csdn.net/charce_you/category_9016041.html), [VTK基础及应用开发教程](https://blog.csdn.net/www_doling_net/article/details/8763686)
 * [vtk基础](https://www.zhihu.com/column/c_1406939506679951360)
+* [基本数据结构](https://blog.csdn.net/deepsprings/article/details/107942471)
+* [基本数据结构之数据对象和数据集](https://blog.csdn.net/webzhuce/article/details/72615468)
+* [数据对象、管道架构、渲染子系统](https://blog.csdn.net/charce_you/article/details/93486241)
 
 ## vtk.js
 * https://juejin.cn/post/6854573220121542670
@@ -16,7 +18,6 @@ cmake -DCMAKE_INSTALL_PREFIX=/app/vtk_install -DCMAKE_BUILD_TYPE=Release -DBUILD
 make -j8 && make install
 ```
 
-## 库设计资料
-* [基本数据结构](https://blog.csdn.net/deepsprings/article/details/107942471)
-* [基本数据结构之数据对象和数据集](https://blog.csdn.net/webzhuce/article/details/72615468)
-* [数据对象、管道架构、渲染子系统](https://blog.csdn.net/charce_you/article/details/93486241)
+## demo
+* [立方体](https://zhuanlan.zhihu.com/p/375918788)
+* [mha](https://codeantenna.com/a/grbNCqaiyt)
