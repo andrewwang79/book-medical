@@ -13,7 +13,7 @@
 | 最大密度投影(MP) | 将一定厚度（即CT层厚）中最大CT值的体素投影到背景平面上，以显示所有或部分的强化密度高的血管/器官，所以变化层厚会对图像产生影响 |
 | 最小密度投影 (min/p) | 和MIP正好相反，反映的是一定层厚图像中CT值最低的体素，所以常用来显示胆道、气道等组织结构 |
 
-* [面绘制和体绘制](https://blog.csdn.net/weixin_42352178/article/details/109201572)
+* [面绘制和体绘制](https://blog.csdn.net/weixin_42352178/article/details/109201572) : 面绘制通过构建三维模型的表面网格绘制三维模型的轮廓。体绘制直接绘制三维数据的每一个像素点，从而构建出包含内部空间信息的三维立体模型。
 * [医学序列图像定位线绘制基本方法介绍](https://blog.csdn.net/inter_peng/article/details/62046916)
 * 正切：沿着轴向的切割，步长和spacing相同，轴状位显示和原始dicom单层显示相同，pixel取值没有经过插值
 * 斜切：通常说的任意切，斜切面上像素点是通过插值得到的，一般原始ct图像时通过线性插值，mask图像是通过最近邻插值，还有些其它的插值方法，比如双线性插值，样条插值
@@ -26,6 +26,16 @@
 ### Mesh
 * [Mesh网格知识](http://www.jmecn.net/tutorial-for-beginners/chapter-4-mesh.html)
 * [点云到Mesh](https://blog.csdn.net/Architet_Yang/article/details/90049715)
+
+### 分割算法
+| 名称 | 说明 |
+| :-: | - |
+| Threshold | 阈值法分割 |
+| Margin | 现有分割结果向外生长或者收缩特定像素 |
+| Hollow | 现有分割结果中间掏空，用在血管壁的分割比较管用 |
+| Grow from seeds |  |
+| Level Tracing | 根据灰度值在平面内生成一个轮廓 |
+| Fill between slices | 自动在切片之间进行插值填充，不用在每一slice进行标注，只标注关键slice然后自动插值填充再微调即可 |
 
 ## 渲染知识
 ### 渲染方式

@@ -13,6 +13,7 @@
   * [ITK](graphics/itk.md)
   * [VTK](graphics/vtk.md)
   * [OpenGL](graphics/opengl.md)
+  * [3DSlicer](graphics/3dslicer.md)
 * [手术](operation/SUMMARY.md)
   * [术前规划系统](operation/plan.md)
   * [术中导航系统](operation/nav.md)

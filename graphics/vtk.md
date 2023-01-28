@@ -1,15 +1,34 @@
 # VTK
 ## 知识
-* [教程1](https://blog.csdn.net/weixin_41755306/category_11615855.html), [教程1](https://blog.csdn.net/charce_you/category_9016041.html), [VTK基础及应用开发教程](https://blog.csdn.net/www_doling_net/article/details/8763686)
+### 概念
 * [vtk基础](https://www.zhihu.com/column/c_1406939506679951360)
-* [基本数据结构](https://blog.csdn.net/deepsprings/article/details/107942471)
-* [基本数据结构之数据对象和数据集](https://blog.csdn.net/webzhuce/article/details/72615468)
 * [数据对象、管道架构、渲染子系统](https://blog.csdn.net/charce_you/article/details/93486241)
+* [功能模块](https://blog.csdn.net/charce_you/article/details/93486758)
+* [图形模型和可视化模型](https://blog.csdn.net/charce_you/article/details/91637379)
+* [基本数据结构](https://blog.csdn.net/deepsprings/article/details/107942471)
+* [着色器和图形管道](https://blog.csdn.net/charce_you/article/details/91345079)
+* [相机](https://blog.csdn.net/charce_you/article/details/91315507)
 
-## vtk.js
-* https://juejin.cn/post/6854573220121542670
+### 对象
+* [基础对象](https://blog.csdn.net/charce_you/article/details/93657792)
+* [数据类](https://blog.csdn.net/charce_you/article/details/94427418), [基本数据结构之数据对象和数据集](https://blog.csdn.net/webzhuce/article/details/72615468)
+* [Mapper](https://blog.csdn.net/charce_you/article/details/94627490)
+* [演员类](https://blog.csdn.net/charce_you/article/details/94427411)
+* [窗口类](https://blog.csdn.net/charce_you/article/details/93659023)
 
-## VTK集成EGL编译
+### 纹理
+* [纹理](https://blog.csdn.net/charce_you/article/details/91635577)
+* [纹理贴图](https://blog.csdn.net/charce_you/article/details/97948687)
+
+### 渲染
+* [渲染六步](https://zhuanlan.zhihu.com/p/375918788)
+
+### 开发
+* [教程1](https://blog.csdn.net/weixin_41755306/category_11615855.html), [教程2](https://blog.csdn.net/charce_you/category_9016041.html), [VTK基础及应用开发教程](https://blog.csdn.net/www_doling_net/article/details/8763686)
+* [vtk.js](https://juejin.cn/post/6854573220121542670)
+
+## 编译
+### 集成EGL
 ```
 git clone https://gitlab.kitware.com/vtk/vtk.git && cd vtk && git checkout v8.2.0
 mkdir /app/vtk_install && mkdir build && cd build
@@ -18,6 +37,9 @@ cmake -DCMAKE_INSTALL_PREFIX=/app/vtk_install -DCMAKE_BUILD_TYPE=Release -DBUILD
 make -j8 && make install
 ```
 
-## demo
-* [立方体](https://zhuanlan.zhihu.com/p/375918788)
-* [mha](https://codeantenna.com/a/grbNCqaiyt)
+## 开发
+* [VTK智能指针](https://blog.csdn.net/WU9797/article/details/107854988)
+
+### demo
+* [STL文件](https://server.php1.cn/detail/vtk_ShiZhan_-_Sh_e1895aa1.html)
+* [mha文件](https://codeantenna.com/a/grbNCqaiyt)
