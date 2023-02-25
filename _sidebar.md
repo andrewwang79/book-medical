@@ -4,6 +4,7 @@
     * [DICOM协议](kb/dicom.md)
     * [NIFTI协议](kb/nifti.md)
     * [医疗器械注册](kb/register.md)
+    * [手术器械](kb/surgical_instrument.md)
 * [工具软件](tool/SUMMARY.md)
 * [影像处理](graphics/SUMMARY.md)
   * [坐标系](graphics/coordinate.md)
