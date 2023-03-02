@@ -11,4 +11,5 @@
 * 趋势：智能化，远程化
 
 ## 知识
+* [磁控微型机器人](https://zhuanlan.zhihu.com/p/393887404)
 * [硬件驱动](https://tech.wangyaqi.cn/#/os/driver)
