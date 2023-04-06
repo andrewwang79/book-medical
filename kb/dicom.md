@@ -13,15 +13,23 @@
   * 范围的计算公式 = [窗位-窗宽/2，窗位+窗宽/2]。如窗宽值为300，窗位为-100，那么窗宽窗位的范围是-250到50。
   * 密度值小于最小值时就变成最小值，密度值大于最大值时就变成最大值。
 
-## 常用字段
+## 灰度显示
+* [DICOM转换为灰度图的过程](https://zhuanlan.zhihu.com/p/554873927)
+![](https://pic1.zhimg.com/80/v2-0dd87b234207371866826ad7c96017bc_1440w.webp)
+
+* Modality LUT(像素到CT值)：(像素值 * RescaleSlope) + RescaleIntercept
+* VOI LUT(CT值到灰度)：窗宽窗位
+* RGB = 像素值 * (LargestImagePixelValue - SmallestImagePixelValue) / 255
+
+### 字段
 | 类型 | 名称 | 说明 |
 | :-: | - | - |
 | 最小图像像素值 | SmallestImagePixelValue(0028,0106) | 射线衰减值 |
 | 最大图像像素值 | LargestImagePixelValue(0028,0107) | 射线衰减值 |
-| 窗位 | WindowCenter(0028,1050) | 密度值，单位是HU |
-| 窗宽 | WindowWidth(0028,1051) | 密度值，单位是HU |
 | 缩放截距 | RescaleIntercept(0028,1052) |  |
 | 缩放率 | RescaleSlope(0028,1053) |  |
+| 窗位 | WindowCenter(0028,1050) |  |
+| 窗宽 | WindowWidth(0028,1051) |  |
 
 ## 字段值的中文乱码
 * DICOM文件本身包括Tag (0008, 0005) Specific Character Set记录编码集，如果没有SpecificCharacterSet时, 以ASCII来处理所有字段。
@@ -49,10 +57,6 @@
 | 存储服务 | C-STORE | SCU传输DICOM图像到SCP， 也就是PUSH推图模式 |
 | Query/Retrieve服务 | C-FIND | SCU向SCP请求某个级别(Patient/Study/Series/Image)的信息 |
 | Query/Retrieve服务 | C-MOVE | ![C-MOVE](../s/radiology/c-move.png) |
-
-## 公式
-1. 密度值 = (像素值 * RescaleSlope) + RescaleIntercept
-1. RGB = 像素值 * (LargestImagePixelValue - SmallestImagePixelValue) / 255
 
 ## 脱敏
 * 行业脱敏TAG参考：https://www.dicomlibrary.com/terms-of-service/，https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4636522/

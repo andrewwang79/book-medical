@@ -1,10 +1,11 @@
 * [介绍](README.md)
-* [医疗知识](kb/SUMMARY.md)
+* 医疗知识
+    * [人体和病症](kb/body.md)
     * [放射科](kb/radiology.md)
     * [DICOM协议](kb/dicom.md)
     * [NIFTI协议](kb/nifti.md)
     * [医疗器械注册](kb/register.md)
-    * [手术器械](kb/surgical_instrument.md)
+    * [手术和器械](kb/surgical_instrument.md)
 * [工具软件](tool/SUMMARY.md)
 * [影像处理](graphics/SUMMARY.md)
   * [坐标系](graphics/coordinate.md)
@@ -19,4 +20,3 @@
   * [术前规划系统](operation/plan.md)
   * [术中导航系统](operation/nav.md)
   * [手术机器人](operation/robot.md)
-* [人体知识](body/SUMMARY.md)

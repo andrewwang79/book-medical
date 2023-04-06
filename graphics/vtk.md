@@ -39,6 +39,14 @@ make -j8 && make install
 
 ## 开发
 * [VTK智能指针](https://blog.csdn.net/WU9797/article/details/107854988) : 与其他智能指针不同之处在于引用计数保留在VTK对象本身中，而不是智能指针类中。这样的好处在于：即使VTK对象作为原始指针传递，也可以增加引用计数。
+* [VTK初始化](https://blog.csdn.net/shenziheng1/article/details/54838394)：否则会出现Warning: Link to vtkInteractionStyle for default style selection
+```
+#include <vtkAutoInit.h>
+VTK_MODULE_INIT(vtkRenderingOpenGL2);
+VTK_MODULE_INIT(vtkInteractionStyle);
+VTK_MODULE_INIT(vtkRenderingFreeType);
+VTK_MODULE_INIT(vtkRenderingVolumeOpenGL2);
+```
 
 ### demo
 * [STL文件](https://server.php1.cn/detail/vtk_ShiZhan_-_Sh_e1895aa1.html)
