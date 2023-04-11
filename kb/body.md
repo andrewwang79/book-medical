@@ -1,4 +1,4 @@
-# 人体知识
+# 人体
 ## 人体系统和部位
 | 系统 | 部位 |
 | :-: | - |
@@ -12,14 +12,13 @@
 | 免疫系统(immune system) | 淋巴结、其他 |
 | 内分泌系统(endocrine system) | 甲状腺、胰岛、肾上腺、其他 |
 
-### 肺
+## 肺
 * [肺部影像解剖](https://www.yxppt.com/archives/336332)
 * [支气管(第1级)至肺泡大致有24级分支](https://zhuanlan.zhihu.com/p/375008011)
+* [肺部常见病变](https://zhuanlan.zhihu.com/p/392020302)
+* [肺实变](https://baike.baidu.com/item/%E8%82%BA%E5%AE%9E%E5%8F%98/4753702)
 
-### 肾脏
+## 肾脏
 * https://www.visiblebody.com/zh/learn/urinary/urinary-kidney
 * https://baike.baidu.com/item/%E8%82%BE%E8%84%8F/1196292
 * https://zhuanlan.zhihu.com/p/482862472
-
-## 病
-* [肺实变](https://baike.baidu.com/item/%E8%82%BA%E5%AE%9E%E5%8F%98/4753702)

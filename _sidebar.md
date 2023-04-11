@@ -1,6 +1,6 @@
 * [介绍](README.md)
 * 医疗知识
-    * [人体和病症](kb/body.md)
+    * [人体](kb/body.md)
     * [放射科](kb/radiology.md)
     * [DICOM协议](kb/dicom.md)
     * [NIFTI协议](kb/nifti.md)
