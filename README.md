@@ -1,4 +1,6 @@
 # 医疗
+> book : https://medical.wangyaqi.cn/
+
 ## 系统
 | 英文 | 中文 | 说明 |
 | :-: | - | - |

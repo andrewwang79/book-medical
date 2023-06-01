@@ -12,3 +12,6 @@
 * https://itk.org/ItkSoftwareGuide.pdf
 * [build](https://itk.org/Wiki/ITK/Getting_Started/Build/Linux)
 * [hello world](https://itk.org/Wiki/ITK/HelloInsight)
+
+## 编码
+1. ITK的Pointer作为函数输出参数**须是引用**：如fn(itk::Image<float, 3>::Pointer& image)

@@ -1,4 +1,5 @@
 # 坐标系
+> 规则: 第三方库（ITK、VTK等)采用其内部的图像坐标系，跨库通讯采用物理坐标系
 
 * [医学图像中解剖学坐标系](https://www.cnblogs.com/biaohuang/p/14419118.html)
 * [图像坐标系，相机坐标系和世界坐标系](https://blog.csdn.net/weicao1990/article/details/82688446)
@@ -6,8 +7,9 @@
 
 | 坐标系 | 说明 |
 | :----: | ---- |
-| 世界坐标系，人体/解剖学坐标系 | 单位是mm |
-| 图像坐标系 | 整数，单位是点(因为间距不定，点的mm也不定)，原点在左上角。i坐标轴向右递增，j坐标轴向下递增，k坐标轴向后递增。 |
+| 物理坐标系 | 单位是mm，如某台CT设备的物理坐标系 |
+| 人体/解剖学坐标系 | 单位是mm |
+| 图像坐标系 | 整数，单位是像素(因为间距不定，点的mm也不定)，原点在左上角。i坐标轴向右递增，j坐标轴向下递增，k坐标轴向后递增。 |
 
 ## 人体
 * 矢状面
@@ -29,10 +31,10 @@
 | VTK |  | 图像的左下角 | 左下角 |
 | 3D Slicer | RAS：（Right，Anterior，Superior） |  |  |
 
-## 图像和世界的坐标系转换
+## 图像坐标系和物理坐标系转换
 ```
-图像到世界：physics[i] = origin[i] + pixel[i] * spacing[i] // 起始坐标offset + 图像值 * 层间距
-世界到图像：pixel[i] = (physics[i] - origin[i])/spacing[i] + 0.5 // 0.5是为了向上取整
+图像到物理：physics[i] = origin[i] + pixel[i] * spacing[i] // 起始坐标offset + 图像值 * 层间距
+物理到图像：pixel[i] = (physics[i] - origin[i])/spacing[i] + 0.5 // 0.5是为了向上取整
 ```
 
 1. i是0/1/2。也就是XYZ轴的值
