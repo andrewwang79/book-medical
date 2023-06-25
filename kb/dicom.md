@@ -13,13 +13,18 @@
   * 范围的计算公式 = [窗位-窗宽/2，窗位+窗宽/2]。如窗宽值为300，窗位为-100，那么窗宽窗位的范围是-250到50。
   * 密度值小于最小值时就变成最小值，密度值大于最大值时就变成最大值。
 
+## CT值
+1. 原始像素值存储在PixelData中，通常是一个16位有符号整数类型，即signed short，取值范围为-32768到+32767
+1. 像素值到CT值公式见下文
+1. CT图像上每个像素所对应的物质对X线线性衰减量平均大小的表示，单位为HU(Housfield Units，豪斯菲尔德是发明CT扫描仪的英国科学家)
+
 ## 灰度显示
 * [DICOM转换为灰度图的过程](https://zhuanlan.zhihu.com/p/554873927)
 ![](https://pic1.zhimg.com/80/v2-0dd87b234207371866826ad7c96017bc_1440w.webp)
 
-* Modality LUT(像素到CT值)：(像素值 * RescaleSlope) + RescaleIntercept
+* Modality LUT(像素值到CT值)：(像素值 * RescaleSlope) + RescaleIntercept
 * VOI LUT(CT值到灰度)：窗宽窗位
-* RGB = 像素值 * (LargestImagePixelValue - SmallestImagePixelValue) / 255
+* RGB：像素值 * (LargestImagePixelValue - SmallestImagePixelValue) / 255
 
 ### 字段
 | 类型 | 名称 | 说明 |

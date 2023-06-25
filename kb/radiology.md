@@ -25,7 +25,7 @@
 | CTA(CT血管成像/CT Angiography) | 增强CT。将动脉血管显影的药物注射到静脉内，利用CT机扫描获得的图像数据进行处理后，使头颈、心脏、肺动脉、主动脉等血管显影成像 |  |
 | CTP(CT灌注成像/CT Perfusion) | 增强CT。[原理](https://blog.csdn.net/chenran187906/article/details/110387736) |  |
 | DSA(数字减影技术/Digital subtraction angiography) | 将注入造影剂前后拍摄的两帧X线图像通过数字化处理(减影、增强和再成像)，把不需要的组织影像删除掉，只保留血管影像 |  |
-| [锥形束CT(CBCT/Cone Beam CT)](https://www.cn-healthcare.com/articlewm/20220531/content-1367848.html) | 西门子的成像视野是16立方厘米。主要应用于口腔、颌面部、耳鼻喉、乳腺等局部区域，常用于牙科、骨科、耳鼻喉科等领域 | 使用锥形束的X射线进行成像 |
+| [锥形束CT(CBCT/Cone Beam CT)](https://www.cn-healthcare.com/articlewm/20220531/content-1367848.html) | 西门子的成像视野是16立方厘米。主要应用于口腔、颌面部、耳鼻喉、乳腺等局部区域，常用于牙科、骨科、耳鼻喉科等领域 <br> [螺旋CT、增强CT、CBCT](https://www.sohu.com/a/233743240_100130383) | 使用锥形束的X射线进行成像 |
 | [C形臂(C型的机架)](https://zhuanlan.zhihu.com/p/265023777) | 大C(DSA，固定的)、中C(大C80%以上手术需求)和小C(骨科C臂) |  |
 | 经胸壁超声心动图(TTE/transthoracic echocardiography) |  |  |
 | [经食道超声心动图(TEE/transesophageal echocardiography)](https://e.dxy.cn/wisdom/front/zhihuihao/6961) | 通过超声探头位置的改变，由后向前近距离扫查心脏深部结构，显示出三维心脏结构的可视图像。TEE能比TTE更好地显示心脏后部结构 |  |
@@ -36,27 +36,24 @@
 
 | 名称 | 说明 |
 | :-: | - |
-| HU | CT图像上每个像素所对应的物质对X线线性衰减量平均大小的表示。称为CT值，其单位为HU(Housfield Units，豪斯菲尔德是发明CT扫描仪的英国科学家) <br> 通常是一个16位有符号整数类型，即signed short，取值范围为-32768到+32767 |
 | POI | point of interest，兴趣点，GIS是坐标点 |
 | ROI | region of interest，GIS是区域 |
 
 ## 影像文件
-* 放射中主要有六种文件格式：DICOM（医疗中的数字图像和通信）、NIFTI（神经影像学信息技术计划）、PAR/REC（飞利浦 MRI 扫描格式）、ANALYZE（Mayo医疗成像）、NRRD（近乎原始光栅数据）、MNIC 格式。
-* [3D模型(mesh)](https://blog.csdn.net/cloudqiu/article/details/98595029)主要是STL和OBJ
+* 放射的6种主要格式：DICOM、NIFTI、PAR/REC（飞利浦 MRI 扫描格式）、ANALYZE（Mayo医疗成像）、NRRD、MNIC 格式。
+* [3D模型(mesh)](https://blog.csdn.net/cloudqiu/article/details/98595029)格式：STL、OBJ
 
 | 类型 | 全称 | 说明 |
 | - | - | - |
-| dicom | Digital Imaging and Communication In Medicine | Orthanc - DICOM Server |
+| DICOM | 医疗中的数字图像和通信/Digital Imaging and Communication In Medicine | Orthanc - DICOM Server |
 | mha/mhd |  | 体数据，mhd包含图像的meta data（.mhd）和图像裸数据(.raw) |
-| NIFTI | Neuroimaging Informatics Technology Initiative | 体数据，nii/nii.gz |
-| [NRRD](http://teem.sourceforge.net/nrrd/format.html) | Nearly Raw Raster Data | “扩散加权图像”和“扩散张量图像”数据可以被解读为一个“3D切片机”，能够直观地确定张量图像的方向与神经解剖的预期是一致的。 |
+| NIFTI | 神经影像学信息技术计划/Neuroimaging Informatics Technology Initiative | 体数据，nii/nii.gz |
+| [NRRD](http://teem.sourceforge.net/nrrd/format.html) | 近乎原始光栅数据/Nearly Raw Raster Data | “扩散加权图像”和“扩散张量图像”数据可以被解读为一个“3D切片机”，能够直观地确定张量图像的方向与神经解剖的预期是一致的。 |
 | STL | stereolithography，光固化立体造型术 | 三维重建模型的表面MESH，用三角形网格来表现3D CAD模型，只能描述三维物体的几何信息，不支持颜色材质等信息 |
 | [OBJ](https://blog.csdn.net/cloudqiu/article/details/98595029) |  | 三维重建模型的表面MESH，支持四边形网格 |
 | JPG/PNG/tiff |  | 图片 |
 
 ## 资料
-* [螺旋CT、增强CT、CBCT](https://www.sohu.com/a/233743240_100130383)
-
 ### 显示器
 * 普通显示器分辨率1920*1080，DELL E2216HV
 * 医用专业显示器

@@ -21,7 +21,7 @@
 | :-: | - | - |
 | CAD | 临床文档架构 | 跨机构、跨系统的医疗文书信息交换的“文档结构”，不涉及交换文档的内容信息标准 |
 | [DICOM](https://baike.baidu.com/item/DICOM/2171358) | 医学数字成像和通信(Digital Imaging and Communications in Medicine) | DICOM 3.0 |
-| [HL7](https://baike.baidu.com/item/%E5%8C%BB%E7%96%97%E4%BF%A1%E6%81%AF%E4%BA%A4%E6%8D%A2%E6%A0%87%E5%87%86HL7/7472088) | 医疗信息交换标准HL7(Health Level 7) | HIS、RIS、LIS等相互通信数据标准 |
+| [HL7](https://baike.baidu.com/item/%E5%8C%BB%E7%96%97%E4%BF%A1%E6%81%AF%E4%BA%A4%E6%8D%A2%E6%A0%87%E5%87%86HL7/7472088) | 医疗保健第七层协议(Health Level 7) | 医疗信息交换标准。HIS、RIS、LIS等相互通信数据标准 |
 | [IHE](https://baike.baidu.com/item/IHE-C/5168190) | 集成医疗企业(Integration Healthcare Enterprise) | 不是标准，而是一个服务于医疗信息系统的技术框架 |
 
 ## 机构
