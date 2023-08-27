@@ -26,7 +26,7 @@
 | CTP(CT灌注成像/CT Perfusion) | 增强CT。[原理](https://blog.csdn.net/chenran187906/article/details/110387736) |  |
 | DSA(数字减影技术/Digital subtraction angiography) | 将注入造影剂前后拍摄的两帧X线图像通过数字化处理(减影、增强和再成像)，把不需要的组织影像删除掉，只保留血管影像 |  |
 | [锥形束CT(CBCT/Cone Beam CT)](https://www.cn-healthcare.com/articlewm/20220531/content-1367848.html) | 西门子的成像视野是16立方厘米。主要应用于口腔、颌面部、耳鼻喉、乳腺等局部区域，常用于牙科、骨科、耳鼻喉科等领域 <br> [螺旋CT、增强CT、CBCT](https://www.sohu.com/a/233743240_100130383) | 使用锥形束的X射线进行成像 |
-| [C形臂(C型的机架)](https://zhuanlan.zhihu.com/p/265023777) | 大C(DSA，固定的)、中C(大C80%以上手术需求)和小C(骨科C臂) |  |
+| [C形臂(C型的机架)](https://zhuanlan.zhihu.com/p/265023777) | 大C(DSA，固定的)、中C(大C80%以上手术需求)、小C(骨科C臂) |  |
 | 经胸壁超声心动图(TTE/transthoracic echocardiography) |  |  |
 | [经食道超声心动图(TEE/transesophageal echocardiography)](https://e.dxy.cn/wisdom/front/zhihuihao/6961) | 通过超声探头位置的改变，由后向前近距离扫查心脏深部结构，显示出三维心脏结构的可视图像。TEE能比TTE更好地显示心脏后部结构 |  |
 | IVUS(Intravascular Ultrasound) | 通过超声波成像技术来检测冠状动脉病变的医疗设备。可以在血管内部实时显示血管壁的厚度、斑块的性质和位置等信息，帮助医生评估血管狭窄的程度和位置 |  |

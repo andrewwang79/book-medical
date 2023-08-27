@@ -7,6 +7,7 @@
     * [医疗器械注册](kb/register.md)
     * [技术和器械](kb/surgical_instrument.md)
 * [工具软件](tool/SUMMARY.md)
+  * [Orthanc](tool/orthanc.md)
 * [影像处理](graphics/SUMMARY.md)
   * [坐标系](graphics/coordinate.md)
   * [图像识别](graphics/recog.md)
