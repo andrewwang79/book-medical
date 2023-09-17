@@ -49,7 +49,7 @@
 
 ### 术语
 | 名称 | 中文 | 说明 |
-| :-: | - | - |
+| - | - | - |
 | SOP（Service-Object Pair）| 对象对 | Service(DICOM服务，如存储服务) + Object(DICOM对象，如CT影像) |
 | SCP（Service Class Provider）| 服务类提供者 | 服务端 |
 | SCU（Service Class User）| 服务类使用者 | 客户端，设备 |
@@ -58,10 +58,64 @@
 
 ### 服务命令
 | 服务 | 命令 | 说明 |
-| :-: | - | - |
-| 存储服务 | C-STORE | SCU传输DICOM图像到SCP， 也就是PUSH推图模式 |
-| Query/Retrieve服务 | C-FIND | SCU向SCP请求某个级别(Patient/Study/Series/Image)的信息 |
-| Query/Retrieve服务 | C-MOVE | ![C-MOVE](../s/radiology/c-move.png) |
+| - | - | - |
+| 存储 | C-STORE | 将图像和数据存储到远程存档中，SCU传输DICOM图像到SCP(PUSH推图模式) <br> 是SCU发起的1次请求操作(查询和数据传输合并成1个请求)。 <br> 使用场景：设备推图(SCU) |
+| Query/Retrieve | C-FIND | SCU向SCP请求查询信息 |
+| Query/Retrieve | C-MOVE | 检索图像和数据并将其传输回接收方(拉图模式)，检索图像和数据是不同连接 <br> 是两次请求(先查询请求，再数据传输请求) <br> 使用场景：PACS传输影像(C-MOVE的SCP，C-STORE的SCU) <br> ![C-MOVE](../s/radiology/c-move.png) |
+| Query/Retrieve | C-GET | 类似C-MOVE，接收方只能是请求方，检索图像和数据是同一个连接 |
+| 网络连通检查 | C-ECHO |  |
+
+#### C-FIND
+* 查询模型级别（Information model level）:查询目标实体的最高级别(WHERE)
+* 查询/检索级别（Query/retrieve level）:查询结果的详细程度(SELECT)，有Patient/Study/Series/Image
+
+如果模型级别设置为Patient，查询/检索级别设置为Study，那么查询将在患者级别进行，返回该患者所有研究的基本属性信息。
+
+#### C-MOVE
+1. SCU将查询请求发送给SCP
+1. SCP将符合查询条件的数据直接传输到SCU
+1. SCU接收和存储这些数据
+
+#### C-GET
+1. SCU发送查询请求给SCP
+1. SCP返回查询结果
+1. SCU使用查询结果发起第二次请求，要求SCP将具体的数据传输给它
+1. SCP接收到第二次请求后，传输数据给SCU
+1. SCU接收和存储这些数据
+
+### 服务命令工具
+* 工具安装 : apt-get install dcmtk，[Windows下载](https://dicom.offis.de/download/dcmtk/dcmtk367/bin/dcmtk-3.6.7-win64-dynamic.zip)
+* 命令使用前需要SCU和SCP互信
+* 命令通用参数介绍
+    * -v 详细log
+    * -d 调试
+    * -aet : SCU
+    * -aec receiver 192.168.0.99 4242 : SCP
+#### C-STORE
+```
+storescu -v -aet <本地AE> -aec <远端AE> <远端IP> <远端端口号> <上传的DICOM文件>
+
+find ${DICOM_PATH} -type f -name "*" -exec storescu -v -aet sender -aec receiver 192.168.0.99 4242 {} \; // 目录发送，基于Linux
+storescu -v -aet sender -aec receiver 192.168.0.99 4242 ${DICOM文件路径} // 单个文件发送
+```
+
+#### C-FIND
+```
+findscu -v -P -d -aet <本地AE> -aec <远端AE> <远端IP> <远端端口号> -k QueryRetrieveLevel=STUDY -k StudyInstanceUID=<值>
+findscu -v -S -d -aet <本地AE> -aec <远端AE> <远端IP> <远端端口号> -k QueryRetrieveLevel=PATIENT -k PatientID=<值>
+```
+
+#### C-MOVE
+```
+movescu -v -aet <calling_ae_title> -aec <called_ae_title> -<query_level> -k <attribute>=<value> <destination_host> <destination_port>
+```
+
+#### C-GET
+
+#### C-ECHO
+```
+echoscu -d -aet sender -aec receiver 192.168.0.99 4242
+```
 
 ## 脱敏
 * 行业脱敏TAG参考：https://www.dicomlibrary.com/terms-of-service/，https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4636522/
