@@ -10,6 +10,7 @@
   * [Orthanc](tool/orthanc.md)
 * [影像处理](graphics/SUMMARY.md)
   * [坐标系](graphics/coordinate.md)
+  * [标定](graphics/cali.md)
   * [图像识别](graphics/recog.md)
   * [图像可视化](graphics/visualization.md)
   * [图像可视化功能](graphics/visual-fn.md)

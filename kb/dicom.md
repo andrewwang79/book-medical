@@ -66,8 +66,8 @@
 | 网络连通检查 | C-ECHO |  |
 
 #### C-FIND
-* 查询模型级别（Information model level）:查询目标实体的最高级别(WHERE)
-* 查询/检索级别（Query/retrieve level）:查询结果的详细程度(SELECT)，有Patient/Study/Series/Image
+* 查询模型级别（Information model level）:查询结果的模型类型
+* 查询/检索级别（Query/retrieve level）:查询目标实体的最高级别(查询条件)，有Patient/Study/Series/Image，和后续的KV匹配
 
 如果模型级别设置为Patient，查询/检索级别设置为Study，那么查询将在患者级别进行，返回该患者所有研究的基本属性信息。
 
@@ -85,13 +85,15 @@
 
 ### 服务命令工具
 * 工具安装 : apt-get install dcmtk，[Windows下载](https://dicom.offis.de/download/dcmtk/dcmtk367/bin/dcmtk-3.6.7-win64-dynamic.zip)
-* 命令使用前需要SCU和SCP互信
+* 命令使用前需要双方互信，SCP需在SCU的信任清单里
 * 命令通用参数介绍
     * -v 详细log
     * -d 调试
     * -aet : SCU
     * -aec receiver 192.168.0.99 4242 : SCP
+
 #### C-STORE
+* 推图
 ```
 storescu -v -aet <本地AE> -aec <远端AE> <远端IP> <远端端口号> <上传的DICOM文件>
 
@@ -107,7 +109,13 @@ findscu -v -S -d -aet <本地AE> -aec <远端AE> <远端IP> <远端端口号> -k
 
 #### C-MOVE
 ```
-movescu -v -aet <calling_ae_title> -aec <called_ae_title> -<query_level> -k <attribute>=<value> <destination_host> <destination_port>
+启动数据接收存储服务，注意OD目录需存在：
+storescp -aet <本地AE> -od C:/dicom/ <aet的端口>
+aet端口：需在PACS信任清单的，信任不需要端口，而是PACS需知道数据发到哪个端口
+参数--ignore：会不存储数据(ignore store data, receive but do not store)
+
+发起数据查询和拷贝：
+movescu -v -aet <本地AE> -aec <远端AE> <远端IP> <远端端口号> -k QueryRetrieveLevel=STUDY -k StudyInstanceUID=<值>
 ```
 
 #### C-GET

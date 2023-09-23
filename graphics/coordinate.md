@@ -3,7 +3,6 @@
 
 * [医学图像中解剖学坐标系](https://www.cnblogs.com/biaohuang/p/14419118.html)
 * [图像坐标系，相机坐标系和世界坐标系](https://blog.csdn.net/weicao1990/article/details/82688446)
-* [【相机标定】四个坐标系之间的变换关系](https://cloud.tencent.com/developer/article/1820935)
 
 | 坐标系 | 说明 |
 | :----: | ---- |
