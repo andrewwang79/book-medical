@@ -15,6 +15,16 @@
 * [Mapper](https://blog.csdn.net/charce_you/article/details/94627490)
 * [演员类](https://blog.csdn.net/charce_you/article/details/94427411)
 * [窗口类](https://blog.csdn.net/charce_you/article/details/93659023)
+* 拍摄举例，Actor通过vtkCommand处理事件
+
+| 项 | 实例 | 和下层的关系 |
+| - | - | - |
+| Data | 准备拍摄的原材料。如石头、布 | 1:1 |
+| Mapper | 把原材料转换成拍摄对象。如道具师用石头布景，服装师把布做成衣服 | 1:1 |
+| Actor | 拍摄对象。如人物角色，桥 | 1:N |
+| Render | 拍摄结果。如摄像头、灯光 | 1:N |
+| RenderWindow | 导演电脑，一个窗口可以看到每个拍摄结果 | / |
+| RenderWindowInteractor | 导演和每个拍摄结果交互 | / |
 
 ### 纹理
 * [纹理](https://blog.csdn.net/charce_you/article/details/91635577)

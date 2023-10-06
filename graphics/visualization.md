@@ -26,6 +26,7 @@
 ### Mesh
 * [Mesh网格知识](http://www.jmecn.net/tutorial-for-beginners/chapter-4-mesh.html)
 * [点云到Mesh](https://blog.csdn.net/Architet_Yang/article/details/90049715)
+* Marching cube：从体数据(volumetric data)中渲染等值面(Mesh等)的经典算法
 
 ### 分割算法
 | 名称 | 说明 |
