@@ -22,7 +22,7 @@
 | 计算机断层扫描(CT/computed tomography) | 实际上也是用X光给身体拍照片的检查方式。不过不是拍一张，而是要拍很多张，一层一层地查。 | X线衰减系数，使用扫描式X射线进行成像 |
 | CT平扫(NCCT/Noncontrast CT) |  |  |
 | 螺旋CT |  |  |
-| CTA(CT血管成像/CT Angiography) | 增强CT。将动脉血管显影的药物注射到静脉内，利用CT机扫描获得的图像数据进行处理后，使头颈、心脏、肺动脉、主动脉等血管显影成像 |  |
+| CTA(CT血管成像/CT Angiography) | 增强CT，增强血管的可见性看结构和病变。将动脉血管显影的药物注射到静脉内，利用CT机扫描获得的图像数据进行处理后，使头颈、心脏、肺动脉、主动脉等血管显影成像 |  |
 | CTP(CT灌注成像/CT Perfusion) | 增强CT。[原理](https://blog.csdn.net/chenran187906/article/details/110387736) |  |
 | DSA(数字减影技术/Digital subtraction angiography) | 将注入造影剂前后拍摄的两帧X线图像通过数字化处理(减影、增强和再成像)，把不需要的组织影像删除掉，只保留血管影像 |  |
 | [锥形束CT(CBCT/Cone Beam CT)](https://www.cn-healthcare.com/articlewm/20220531/content-1367848.html) | 西门子的成像视野是16立方厘米。主要应用于口腔、颌面部、耳鼻喉、乳腺等局部区域，常用于牙科、骨科、耳鼻喉科等领域 <br> [螺旋CT、增强CT、CBCT](https://www.sohu.com/a/233743240_100130383) | 使用锥形束的X射线进行成像 |
