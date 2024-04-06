@@ -4,7 +4,6 @@
     * [放射科](kb/radiology.md)
     * [DICOM协议](kb/dicom.md)
     * [NIFTI协议](kb/nifti.md)
-    * [医疗器械注册](kb/register.md)
     * [技术和器械](kb/surgical_instrument.md)
 * [工具软件](tool/SUMMARY.md)
   * [Orthanc](tool/orthanc.md)
@@ -22,3 +21,5 @@
 * [手术](operation/SUMMARY.md)
   * [术前规划系统](operation/plan.md)
   * [术中导航系统](operation/nav.md)
+* [医疗器械注册](reg/SUMMARY.md)
+  * [技术要求](reg/tech.md)
