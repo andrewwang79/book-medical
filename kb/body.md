@@ -12,6 +12,9 @@
 | 免疫系统(immune system) | 淋巴结、其他 |
 | 内分泌系统(endocrine system) | 甲状腺、胰岛、肾上腺、其他 |
 
+## 脑
+* 脑卒中
+
 ## 肺
 * [肺部影像解剖](https://www.yxppt.com/archives/336332)
 * [支气管(第1级)至肺泡大致有24级分支](https://zhuanlan.zhihu.com/p/375008011)
@@ -22,3 +25,9 @@
 * https://www.visiblebody.com/zh/learn/urinary/urinary-kidney
 * https://baike.baidu.com/item/%E8%82%BE%E8%84%8F/1196292
 * https://zhuanlan.zhihu.com/p/482862472
+
+## 泌尿
+结构：尿道，膀胱，输尿管，肾
+
+# 自然腔道
+> 血管，气管，消化道，尿道
