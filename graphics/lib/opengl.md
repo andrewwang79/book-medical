@@ -2,6 +2,8 @@
 * 渲染2D、3D矢量图形的跨语言、跨平台的应用程序编程接口（API）。用来绘制从简单的图形比特到复杂的三维景象，常用于CAD、虚拟现实、科学可视化程序和电子游戏开发。
 * 是图形库，没有UI。面向过程的C函数库
 * [OpenGL入门教程](https://blog.csdn.net/xiangzhihong8/article/details/84776943)
+* https://zhuanlan.zhihu.com/p/56693625
+* https://zhuanlan.zhihu.com/p/374920616
 
 ## 配套库
 * https://blog.csdn.net/qq_42741249/article/details/125737731

@@ -1,5 +1,5 @@
-# 图像可视化
-## 三维重建知识
+# 三维重建
+## 算法
 * [CT三维重建](https://blog.csdn.net/fanhenghui/article/details/51036422)
 * [可视化重建](https://www.iih.xin/productinfo/1410267.html)
 
@@ -23,22 +23,26 @@
 * [VTK实现曲面重建](https://beondxin.blog.csdn.net/article/details/117248736)
 * [VTK曲面重建技术](https://blog.csdn.net/Ericohe/article/details/116189837)
 
-### Mesh
-* [Mesh网格知识](http://www.jmecn.net/tutorial-for-beginners/chapter-4-mesh.html)
-* [点云到Mesh](https://blog.csdn.net/Architet_Yang/article/details/90049715)
-* Marching cube：从体数据(volumetric data)中渲染等值面(Mesh等)的经典算法
+## 三维重建功能
+| 分类 | 功能 | MPR | VR | VE | MIP | CPR |
+| :-: | - | - | - | - | - | - |
+| 显示 | 重建渲染 | Dicom | Dicom+mask | / | / | / |
+|  | 导出 | / | Dicom+mask | / | / | / |
+|  | 设置视图显示尺寸/最大化 | Y | Y | / | / | / |
+|  | 设置：窗宽窗位/配色方案/其他属性 | Y | Y | / | / | / |
+|  | 显示隐藏四角信息/十字线(MPR) | Y | N | / | / | / |
+|  | 坐标改变通知(MPR) | Y | N | / | / | / |
+|  | 显示隐藏mask(VR) | N | Y | / | / | / |
+|  | 显示视图(VR) | N | 鹰眼 | / | / | / |
+| 操作 | 平移和缩放 | Y | Y | / | / | / |
+|  | 旋转 | N | Y | / | / | / |
+| 编辑 | 轮廓(点/线/圆/方)，文字，画笔画刷 | Y | Y | / | / | / |
+|  | 高级：Level tracing，Grow from seeds，Fill between slices | Y | N | / | / | / |
+|  | 裁剪 | N | Y | / | / | / |
+|  | 中心线显示和编辑 | N | Y | / | / | / |
+| 特有 | / | 反色; 测量 : 长度/角度，HU值 | / | / | / | / |
 
-### 分割算法
-| 名称 | 说明 |
-| :-: | - |
-| Threshold | 阈值法分割 |
-| Margin | 现有分割结果向外生长或者收缩特定像素 |
-| Hollow | 现有分割结果中间掏空，用在血管壁的分割比较管用 |
-| Grow from seeds |  |
-| Level Tracing | 根据灰度值在平面内生成一个轮廓 |
-| Fill between slices | 自动在切片之间进行插值填充，不用在每一slice进行标注，只标注关键slice然后自动插值填充再微调即可 |
-
-## 渲染知识
+## 渲染开发
 ### 渲染方式
 * Onscreen: Onscreen refers to the case where the rendering results are presented to the users in a viewable window. On Linux, this invariably requires a running and accessible X server. The desktop Qt client can only operate in on-screen mode and hence needs an accessible X server.
 * Offscreen: Offscreen simply means that the rendering results are not presented to the user in a window. On Linux, this does not automatically imply that an accessible X server is not needed. X server may be needed, unless VTK was built with an OpenGL implementation that allows for headless operation. This mode is not applicable to the desktop Qt client and is only supported by the command line executables.
@@ -60,22 +64,22 @@
 | 嵌入式平台 | EGL | OpenGL ES |
 | 跨平台	 |  | GLFW，GLUT |
 
-### Mesa
+#### Mesa
 * 对接各种GPU硬件，将应用层对GL API的调用转换到对硬件GPU的调用上；
 * 各种GL API的纯软实现，当没有可用的硬件时，它可以提供传软件的GL API的实现；
   * libgl1-mesa-dev：OpenGL实现库
   * libglu1-mesa-dev：gl Utilities库
   * libosmesa6-dev：off screen库
 
-## 渲染方案
-### 方案比对
+### 渲染方案
+#### 方案对比
 | 项 | 技术 | 优势 | 劣势 |
 | - | - | - | - |
 | 后端渲染 | 无头渲染(Headless): (VTK+EGL)+websocket | 支持复杂操作，终端开发容易，**一套环境维护成本低** | **依赖网络带宽**，需要后端大量的内存和算力 |
 | 前端-浏览器渲染 | Onscreen渲染: H5+js库 | 终端不同可复用 | **依赖终端的内存和算力**；复杂操作的支持度有限制 |
 | 前端-客户端渲染 | Onscreen渲染: QT+VTK | 支持复杂操作 | **依赖终端的内存和算力**；**需做系统和环境兼容**；终端不同需重做，比如手机端要换QT |
 
-### 后端渲染
+#### 后端渲染
 * 相比前端渲染，后端渲染需要大量切图操作，其他功能都一样。切图有：
   * 预先切图：无编辑
   * 实时切图：实时编辑
@@ -90,7 +94,9 @@
 | VTK EGL(GPU加速) | 快 | Y | libegl1-mesa-dev，基于镜像nvidia/opengl:1.2-glvnd-devel-ubuntu18.04 |
 
 ## 资料
-### 公司
-* [英库医疗科技](https://www.incool3d.com/)
 * [微至云动](https://www.weiyunyingxiang.com/)
-* [AccuNavi-A手术导航系统](http://www.uegmedical.com/cn/products/AccuNavi-A_Surgical_Navigation_System.html)
+
+### Mesh
+* [Mesh网格知识](http://www.jmecn.net/tutorial-for-beginners/chapter-4-mesh.html)
+* [点云到Mesh](https://blog.csdn.net/Architet_Yang/article/details/90049715)
+* Marching cube：从体数据(volumetric data)中渲染等值面(Mesh等)的经典算法

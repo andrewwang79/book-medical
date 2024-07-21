@@ -47,7 +47,7 @@
 * 医疗行业标准制订中，比如描述法8级，权重法(连续数字)
 * [自动驾驶分级是0-5级别](https://new.qq.com/rain/a/20210309A0CAN000), http://m.cheyun.com/content/22813
 
-![自动驾驶分级](../s/operation/autopilot.jpg)
+![自动驾驶分级](../../s/operation/autopilot.jpg)
 
 ## 技术
 ### 呼吸补偿的精准穿刺
