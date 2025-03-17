@@ -9,11 +9,6 @@
   * [NIFTI协议](radiology/nifti.md)
   * [坐标系](radiology/coordinate.md)
 * [影像处理](graphics/SUMMARY.md)
-  * [三维重建](graphics/visualization.md)
-  * 影像处理库
-    * [ITK](graphics/lib/itk.md)
-    * [VTK](graphics/lib/vtk.md)
-    * [OpenGL](graphics/lib/opengl.md)
 * [医疗器械注册](reg/SUMMARY.md)
   * [技术要求](reg/tech.md)
 * [工具软件](tool/SUMMARY.md)
